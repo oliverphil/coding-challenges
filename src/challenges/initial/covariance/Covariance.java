@@ -1,47 +1,26 @@
 package challenges.initial.covariance;
 
 class Animal {
-    String whatAreYou() {
-        return "I am an animal, maybe you want something more specific";
-    }
 }
 
-class Pet extends Animal {
-    String whatAreYou() {
-        return "I am a pet, maybe you want something more specific";
-    }
+class Pet {
 }
 
-class Dog extends Pet {
-    String whatAreYou() {
-        return "Dog";
-    }
+class Dog {
 }
 
-class Cat extends Pet {
-    String whatAreYou() {
-        return "Cat";
-    }
+class Cat {}
+
+class Human {
 }
 
-abstract class Human {
-    abstract Animal owns();
+class PetOwner {
 }
 
-abstract class PetOwner extends Human {
-    abstract Pet owns();
+class DogOwner {
 }
 
-class DogOwner extends PetOwner {
-    Dog owns() {
-        return new Dog();
-    }
-}
-
-class CatOwner extends PetOwner {
-    Cat owns() {
-        return new Cat();
-    }
+class CatOwner {
 }
 
 public class Covariance {

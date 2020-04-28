@@ -2,7 +2,7 @@ package challenges.initial.flatten;
 
 import java.util.Objects;
 
-class Tree {
+final class Tree {
     public Tree left;
     public Tree right;
     public int value;

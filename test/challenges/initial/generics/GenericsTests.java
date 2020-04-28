@@ -40,22 +40,22 @@ public class GenericsTests {
         }
     }
 
-//    @Test
-//    public void testInt() {
-//        Box<Integer> intBox = new Box<>(1);
-//        assertEquals(1, intBox.getContents());
-//    }
-//
-//    @Test
-//    public void testString() {
-//        Box<String> stringBox = new Box<>("testString");
-//        assertEquals("testString", stringBox.getContents());
-//    }
-//
-//    @Test
-//    public void testClass() {
-//        TestItem i = new TestItem();
-//        Box<TestItem> itemBox = new Box<>(i);
-//        assertEquals(i, itemBox.getContents());
-//    }
+    @Test
+    public void testInt() {
+        Box<Integer> intBox = new Box<>(1);
+        assertEquals(1, intBox.getContents());
+    }
+
+    @Test
+    public void testString() {
+        Box<String> stringBox = new Box<>("testString");
+        assertEquals("testString", stringBox.getContents());
+    }
+
+    @Test
+    public void testClass() {
+        TestItem i = new TestItem();
+        Box<TestItem> itemBox = new Box<>(i);
+        assertEquals(i, itemBox.getContents());
+    }
 }
