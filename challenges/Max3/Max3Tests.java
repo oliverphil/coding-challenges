@@ -1,5 +1,8 @@
+package Max3;
 import challenges.initial.max3.Max3;
 import org.junit.jupiter.api.Test;
+
+import Max3.Max3;
 
 import java.util.Random;
 

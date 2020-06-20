@@ -1,6 +1,8 @@
+package Flatten;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
+import Flatten.Flatten.*;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

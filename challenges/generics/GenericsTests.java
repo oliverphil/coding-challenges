@@ -1,7 +1,9 @@
+package Generics;
 import org.junit.jupiter.api.Test;
 
 import java.util.Objects;
 import java.util.Random;
+import Generics.Generics.Box;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

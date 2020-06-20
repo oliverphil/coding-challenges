@@ -1,4 +1,7 @@
+package Permutations;
+
 import org.junit.jupiter.api.Test;
+import Permutations.Permutations;
 
 import java.util.ArrayList;
 import java.util.List;

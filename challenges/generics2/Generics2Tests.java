@@ -1,5 +1,6 @@
+package Generics2;
 import org.junit.jupiter.api.Test;
-import Generics2;
+import Generics2.Generics2;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

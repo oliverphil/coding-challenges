@@ -1,3 +1,4 @@
+package ExceptionHandling;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -5,6 +6,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.Random;
+
+import ExceptionHandling.ExceptionHandling;
 
 import static org.junit.jupiter.api.Assertions.*;
 

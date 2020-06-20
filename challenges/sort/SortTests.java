@@ -1,7 +1,9 @@
+package Sort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Random;
+import Sort.Sort;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

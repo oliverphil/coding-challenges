@@ -1,9 +1,12 @@
+package ExceptionHandling2;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class ExceptionHandlingTests2 {
+import ExceptionHandling2.ExceptionHandling2.*;
+
+public class ExceptionHandling2Tests {
 
     @Test
     public void testInvalidAge_01() {
