@@ -8,10 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FlattenTests {
 
+    private static final Flatten flt = new Flatten();
+
     private void addNode(Pair<Tree, Integer> node, boolean left, List<Pair<Tree, Integer>> nodes, Random r) {
         if (left) {
             if (node.first.left == null) {
-                node.first.left = new Tree(r.nextInt());
+                node.first.left = flt.new Tree(r.nextInt());
                 if (node.second < 16) {
                     nodes.add(new Pair(node.first.left, node.second + 1));
                 }
@@ -19,7 +21,7 @@ public class FlattenTests {
                     nodes.remove(node);
                 }
             } else {
-                node.first.right = new Tree(r.nextInt());
+                node.first.right = flt.new Tree(r.nextInt());
                 if (node.second < 16) {
                     nodes.add(new Pair(node.first.right, node.second + 1));
                 }
@@ -27,7 +29,7 @@ public class FlattenTests {
             }
         } else {
             if (node.first.right == null) {
-                node.first.right = new Tree(r.nextInt());
+                node.first.right = flt.new Tree(r.nextInt());
                 if (node.second < 16) {
                     nodes.add(new Pair(node.first.right, node.second + 1));
                 }
@@ -35,7 +37,7 @@ public class FlattenTests {
                     nodes.remove(node);
                 }
             } else {
-                node.first.left = new Tree(r.nextInt());
+                node.first.left = flt.new Tree(r.nextInt());
                 if (node.second < 16) {
                     nodes.add(new Pair(node.first.left, node.second + 1));
                 }
@@ -76,7 +78,7 @@ public class FlattenTests {
     @Test
     public void testFlatten_01() {
         Random r = new Random();
-        Tree root = new Tree(r.nextInt());
+        Tree root = flt.new Tree(r.nextInt());
 
         List<Pair<Tree, Integer>> nodes = new ArrayList<>();
         nodes.add(new Pair(root, 0));

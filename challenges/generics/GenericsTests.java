@@ -9,6 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GenericsTests {
 
+    private static final Generics gn = new Generics();
+
     class TestItem {
         int i;
         String s;
@@ -42,20 +44,20 @@ public class GenericsTests {
 
     @Test
     public void testInt() {
-        Box<Integer> intBox = new Box<>(1);
+        Box<Integer> intBox = gn.new Box<>(1);
         assertEquals(1, intBox.getContents());
     }
 
     @Test
     public void testString() {
-        Box<String> stringBox = new Box<>("testString");
+        Box<String> stringBox = gn.new Box<>("testString");
         assertEquals("testString", stringBox.getContents());
     }
 
     @Test
     public void testClass() {
         TestItem i = new TestItem();
-        Box<TestItem> itemBox = new Box<>(i);
+        Box<TestItem> itemBox = gn.new Box<>(i);
         assertEquals(i, itemBox.getContents());
     }
 }

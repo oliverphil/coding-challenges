@@ -7,8 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
-public class PermutationTests {
+public class PermutationsTests {
 
     private List<String> findPermutations(String s) {
         List<String> permutations = new ArrayList<>();
@@ -42,6 +43,10 @@ public class PermutationTests {
 
         List<String> actualResults = Permutations.permutations(s);
 
+        if (actualResults.isEmpty()) {
+            fail();
+        }
+
         for (String res: expectedResults) {
             assertTrue(actualResults.contains(res));
         }
@@ -52,10 +57,14 @@ public class PermutationTests {
 
     @Test
     public void testPermutations_02() {
-        String s = "jsfghlasljf";
+        String s = "jsfgsf";
         List<String> expectedResults = findPermutations(s);
 
         List<String> actualResults = Permutations.permutations(s);
+
+        if (actualResults.isEmpty()) {
+            fail();
+        }
 
         for (String res: expectedResults) {
             assertTrue(actualResults.contains(res));
