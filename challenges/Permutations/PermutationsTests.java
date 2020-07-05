@@ -1,10 +1,12 @@
 package Permutations;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 import Permutations.Permutations;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -37,6 +39,7 @@ public class PermutationsTests {
     }
 
     @Test
+    @Timeout(value = 60, unit = TimeUnit.SECONDS)
     public void testPermutations_01() {
         String s = "abcdef";
         List<String> expectedResults = findPermutations(s);
@@ -56,6 +59,7 @@ public class PermutationsTests {
     }
 
     @Test
+    @Timeout(value = 60, unit = TimeUnit.SECONDS)
     public void testPermutations_02() {
         String s = "jsfgsf";
         List<String> expectedResults = findPermutations(s);

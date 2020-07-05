@@ -1,8 +1,11 @@
 package Count;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 import Count.Count;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -18,6 +21,7 @@ public class CountTests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void countTest_01() {
         Random r = new Random();
         for (int i=0; i<100; i++) {

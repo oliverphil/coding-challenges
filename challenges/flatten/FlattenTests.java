@@ -1,7 +1,10 @@
 package Flatten;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
+
 import Flatten.Flatten.*;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -76,6 +79,7 @@ public class FlattenTests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void testFlatten_01() {
         Random r = new Random();
         Tree root = flt.new Tree(r.nextInt());

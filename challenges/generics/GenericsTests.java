@@ -1,8 +1,11 @@
 package Generics;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import java.util.Objects;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 import Generics.Generics.Box;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -43,18 +46,21 @@ public class GenericsTests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void testInt() {
         Box<Integer> intBox = gn.new Box<>(1);
         assertEquals(1, intBox.getContents());
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void testString() {
         Box<String> stringBox = gn.new Box<>("testString");
         assertEquals("testString", stringBox.getContents());
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void testClass() {
         TestItem i = new TestItem();
         Box<TestItem> itemBox = gn.new Box<>(i);

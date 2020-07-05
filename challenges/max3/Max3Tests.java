@@ -1,9 +1,10 @@
 package Max3;
 import Max3.Max3;
 import org.junit.jupiter.api.Test;
-
+import org.junit.jupiter.api.Timeout;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -14,6 +15,7 @@ public class Max3Tests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void testMax3() {
         Random numbers = new Random();
         for(int i=0; i<100; i++) {

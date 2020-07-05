@@ -1,9 +1,11 @@
 package Generics2;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 import Generics2.Generics2;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -11,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 public class Generics2Tests {
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void testNumbers() {
         List<Number> numbers = new ArrayList<>();
         Random r = new Random();
@@ -29,6 +32,7 @@ public class Generics2Tests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void testDoubles() {
         List<Double> doubles = new ArrayList<>();
         Random r = new Random();
@@ -44,6 +48,7 @@ public class Generics2Tests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void testStrings() {
         List<? extends Number> nums = new ArrayList<>();
         addString(nums);

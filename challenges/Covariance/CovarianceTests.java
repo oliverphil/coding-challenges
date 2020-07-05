@@ -1,16 +1,20 @@
 package Covariance;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import Covariance.Covariance.*;
+
+import java.util.concurrent.TimeUnit;
 
 public class CovarianceTests {
 
     private static final Covariance cov = new Covariance();
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void covarianceTest_01() {
         Human h = cov.new CatOwner();
 
@@ -20,6 +24,7 @@ public class CovarianceTests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void covarianceTest_02() {
         Human h = cov.new DogOwner();
 
@@ -29,6 +34,7 @@ public class CovarianceTests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void covarianceTest_03() {
         Animal a = cov.new Animal();
 
@@ -37,6 +43,7 @@ public class CovarianceTests {
     }
 
     @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
     public void covarianceTest_04() {
         Animal a = cov.new Pet();
 
