@@ -8,6 +8,8 @@ the numbers in the input array.
 
 ##### Example
 
+Types are in brackets: `(Integer)`
+
 Inputs:  
 `List<>((Double) 1.5, (Integer) 4)`  
 
