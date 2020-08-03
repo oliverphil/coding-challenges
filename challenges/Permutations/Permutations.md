@@ -6,6 +6,7 @@ Return a list of all the permutations as strings.
 **Imports:**
 * `java.util.Collections`
 * `java.util.List`
+* `java.util.ArrayList`
 
 
 ##### Example
