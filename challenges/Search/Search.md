@@ -3,6 +3,8 @@
 Find if an array of integers is present as a subarray within another array of integers.
 Complete the `search(int[] searchTerm, int[] searchArray)` method to do this.
 
+**Imports:** There are no imports included for this challenge.
+
 ##### Example
 
 Input:  

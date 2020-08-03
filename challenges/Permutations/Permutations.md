@@ -3,6 +3,11 @@
 Complete the `permutations(String s)` method to find all the permutations (anagrams) of the string `s`.  
 Return a list of all the permutations as strings.
 
+**Imports:**
+* `java.util.Collections`
+* `java.util.List`
+
+
 ##### Example
 
 Input:  

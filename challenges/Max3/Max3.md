@@ -2,6 +2,8 @@
 
 Find the maximum of the 3 numbers provided to the method `max3`
 
+**Imports:** There are no imports included for this challenge.
+
 ##### Example
 
 Inputs:  
