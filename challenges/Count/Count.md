@@ -2,6 +2,8 @@
 
 Fill out the method stub to find the number of times an `item` occurs within the array `arr`
 
+**Imports:** There are no imports included for this challenge.
+
 ##### Example
 
 Inputs  

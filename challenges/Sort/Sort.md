@@ -2,7 +2,7 @@
 
 Complete the `sort(int[] arr)` method to return the array sorted by numerical value ascending.
 
-You cannot use `java.util.Arrays` methods
+**Imports:** There are no imports included for this challenge.
 
 ##### Example
 
