@@ -98,6 +98,46 @@ public class FlattenTests {
         assertTrue(Arrays.equals(expectedResult, actualResult));
     }
 
+    @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
+    public void testFlatten_02() {
+        Random r = new Random();
+        Tree root = flt.new Tree(r.nextInt());
+
+        List<Pair<Tree, Integer>> nodes = new ArrayList<>();
+        nodes.add(new Pair(root, 0));
+
+        for (int i=0; i<100; i++) {
+            Pair node = nodes.get(r.nextInt(nodes.size()));
+            addNode(node, r.nextBoolean(), nodes, r);
+        }
+
+        int[] expectedResult = flatten(root);
+        int[] actualResult = Flatten.flatten(root);
+
+        assertTrue(Arrays.equals(expectedResult, actualResult));
+    }
+
+    @Test
+    @Timeout(value = 20, unit = TimeUnit.SECONDS)
+    public void testFlatten_03() {
+        Random r = new Random();
+        Tree root = flt.new Tree(r.nextInt());
+
+        List<Pair<Tree, Integer>> nodes = new ArrayList<>();
+        nodes.add(new Pair(root, 0));
+
+        for (int i=0; i<100; i++) {
+            Pair node = nodes.get(r.nextInt(nodes.size()));
+            addNode(node, r.nextBoolean(), nodes, r);
+        }
+
+        int[] expectedResult = flatten(root);
+        int[] actualResult = Flatten.flatten(root);
+
+        assertTrue(Arrays.equals(expectedResult, actualResult));
+    }
+
     class Pair<K, V> {
         public K first;
         public V second;
