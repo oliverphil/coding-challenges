@@ -12,7 +12,7 @@ public class SearchTests {
         int[] arr = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8};
         int[] searchArr = new int[]{5, 6, 7};
 
-        assertTrue(Search.search(arr, searchArr));
+        assertTrue(Search.search(searchArr, arr));
     }
 
     @Test
@@ -20,7 +20,7 @@ public class SearchTests {
         int[] arr = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8};
         int[] searchArr = new int[]{5, 6, 9};
 
-        assertFalse(Search.search(arr, searchArr));
+        assertFalse(Search.search(searchArr, arr));
     }
 
 }
