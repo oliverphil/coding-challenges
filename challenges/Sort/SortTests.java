@@ -18,14 +18,14 @@ public class SortTests {
                 arr[j] = numbers.nextInt();
             }
 
-            Arrays.sort(arr);
-
             int[] actualResult = Sort.sort(Arrays.copyOf(arr, arr.length));
+
+            Arrays.sort(arr);
 
             assertEquals(arr.length, actualResult.length);
 
             for (int j = 0; j < arr.length; j++) {
-                assertEquals(actualResult[j], actualResult[j]);
+                assertEquals(arr[j], actualResult[j]);
             }
         }
     }
@@ -39,14 +39,14 @@ public class SortTests {
                 arr[j] = numbers.nextInt();
             }
 
-            Arrays.sort(arr);
-
             int[] actualResult = Sort.sort(Arrays.copyOf(arr, arr.length));
+
+            Arrays.sort(arr);
 
             assertEquals(arr.length, actualResult.length);
 
             for (int j = 0; j < arr.length; j++) {
-                assertEquals(actualResult[j], actualResult[j]);
+                assertEquals(arr[j], actualResult[j]);
             }
         }
     }
@@ -60,14 +60,14 @@ public class SortTests {
                 arr[j] = numbers.nextInt();
             }
 
-            Arrays.sort(arr);
-
             int[] actualResult = Sort.sort(Arrays.copyOf(arr, arr.length));
+
+            Arrays.sort(arr);
 
             assertEquals(arr.length, actualResult.length);
 
             for (int j = 0; j < arr.length; j++) {
-                assertEquals(actualResult[j], actualResult[j]);
+                assertEquals(arr[j], actualResult[j]);
             }
         }
     }
